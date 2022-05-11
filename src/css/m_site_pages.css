@@ -1,0 +1,278 @@
+
+.mobile .HomePage section.section1 h1 {
+    margin: 20% 0 0 0;
+    font-size: 30px;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+
+.mobile .searchBar,
+.mobile header.topheader .searchBar
+{
+    position: relative;
+    width: 90%;
+    margin: -50px auto 0;
+    right: initial;
+    padding: 20px 20px;
+}
+
+.mobile .searchBar h2 {
+    display: block;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.mobile .searchBar .inputsContent .form-group {
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.mobile .searchBar .inputsContent .downFilters .form-group {
+    margin: 0 0 0 0;
+}
+
+.mobile .searchBar a.lupaBtn {
+    display: block;
+    margin: 10px auto 0;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+    width: 65px;
+    padding: 15px;
+
+}
+
+.mobile .searchBar a.lupaBtn img {
+    width: 100%;
+}
+
+.mobile .section1 {
+    margin: 10px 0 0 0;
+    background: #F2F2F2;
+}
+
+.mobile .section1 .sec1_h2 {
+    font-size: 30px;
+}
+.mobile .section1 .tableSec {
+    margin: 10px 0 0 0;
+    display: block;
+    text-align: center;
+}
+
+.mobile .section1 .tableSec img {
+    margin: 0 0 20px 0;
+}
+
+.mobile .section1 .tableSec .col {
+    display: block;
+    width: 100%;
+    padding: 40px 5% 20px;
+}
+
+.mobile .section1 .tableSec .text {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.mobile .section1 .picturesMobile {
+    margin: 20px 0 0 0;
+}
+
+.mobile .section1 .picturesMobile .item .downText {
+    text-align: center;
+    line-height: 1.2;
+    margin: 15px 0 0 0;
+}
+
+
+.mobile header.circleHeader {
+    width: 200px;
+    height: 200px;
+    padding: 40px 0 0 0;
+}
+
+.mobile header.circleHeader img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.mobile header.circleHeader h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile .city .text {
+    width: 100%;
+    padding: 100px 10% 0;
+}
+
+.mobile .city .text h1 {
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 0 30px 0;
+}
+
+.mobile section.MapsPictures {
+    padding: 40px 0 140px;
+}
+
+.mobile section.MapsPictures h2 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+.mobile .project {
+    padding: 0;
+}
+.mobile .project .text {
+    background: none !important;
+    color: black;
+    width: 100%;
+    height: initial;
+    margin: 0 0 50px 0;
+}
+
+.mobile .project .text .textParagraph {
+    color: #808080;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 5%;
+}
+
+.mobile .purchaseProcess {
+    padding: 50px 0;
+}
+
+.mobile .purchaseProcess h2 {
+    font-size: 30px;   
+}
+
+.mobile .purchaseProcess .bullets ul {
+    margin: 30px 0 0 0;
+}
+
+.mobile .purchaseProcess .bullets ul li p.text {
+    min-height: initial;
+}
+
+.mobile .purchaseProcess .bullets ul li p {
+    margin: 0 0 5px 0;
+}
+
+.mobile .modal-PopupText .modal-dialog {
+    margin: 30px auto 0;
+    max-width: 90%;
+}
+
+.mobile .modal-PopupText .modal-content .modal-body button.close {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    right: 0;
+}
+
+.mobile .modal-PopupText .modal-content h3 {
+    font-size: 30px;
+}
+
+.mobile .payments header.circleHeader {
+    background: white;
+    width: 340px;
+    height: 340px;
+    padding: 140px 0 0 0;
+}
+
+.mobile .payments .moreText {
+    margin: 0;
+}
+
+
+.mobile .payments .moreText h2 {
+    font-size: 20px;
+}
+
+.mobile .payments .moreText .textCont .columns .colText {
+    display: block;
+    width: 100%;
+}
+
+
+
+.mobile .Mortgage {
+    padding: 40px 0 50px;
+}
+
+.mobile .Mortgage h2 {
+    font-size: 30px;
+}
+
+.mobile .ShowMigrashData {
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.mobile section.Prices .searchBar {
+    width: 100%;
+}
+
+.mobile section.Prices .searchBar .contsearchBar {
+    width: 90%;
+    margin: 30px auto 0;
+}
+
+
+
+.mobile section.Prices .searchBar h2 {
+    display: none;
+}
+
+.mobile section.Prices .searchBar .migrasQuads {
+    width: 100%;
+}
+
+.mobile section.Prices .searchBar .migrasQuads a.quad {
+    padding: 20px 0;
+}
+
+.mobile section.DeppartmentFile {
+    background: white;
+    padding: 0;
+}
+
+.mobile section.DeppartmentFile .buidingsFiles {
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.mobile section.DeppartmentFile .buidingsFiles h2 {
+    margin: 0 0 20px 0;
+}
+
+.mobile section.DeppartmentFile .buidingsFiles h3 {
+    font-size: 30px;
+}
+
+.mobile section.DeppartmentFile .buidingsFiles .changeBuildSelect {
+    display: block;
+    margin: 0px auto;
+}
+
+
+.mobile footer.site-footer .beitShemeshFooter img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+.mobile footer.site-footer .beitShemeshFooter h2 {
+    font-size: 25px;
+}
+
+.mobile footer.site-footer .beitShemeshFooter p {
+    font-size: 16px;
+}
+

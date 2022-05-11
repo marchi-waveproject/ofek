@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head> 
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!-- <meta
+      name="Avisror"
+      content="Avisror Website"
+    /> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png?v=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>עמוד הבית | אופק שלי | בונים לכם עתיד</title>
+	  <link rel="canonical" href="https://lamishtaken.ofekshely.co.il">
+	
+    <meta name="description" content="בונים בשקיפות ובשותפות.
+    החברה דוגלת ביצירתיות ומקצועיות תוך הקפדה על ביצוע מושלם ושרות מקסימאלי.
+    שביעות רצון הלקוחות והשותפים לדרך היא ערך עליון.
+    העמדת הלקוח בראש סדרי העדיפויות של החברה ונתינת תמורה מלאה לכספו במקצועיות ובמיומנות.">
+
+    <meta property="og:image" content="https://lamishtaken.ofekshely.co.il/api/assets/img/default/facebook.png" >
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TZCQQHB');</script>
+  <!-- End Google Tag Manager -->
+  
+
+
+  </head>
+  <body dir="rtl">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZCQQHB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div id="root"></div>
+  </body>
+</html>
+
+<script>
+  ;$(document).ready(function () {
+    $(window).bind('scroll', function () {
+      
+      var top = $(window).scrollTop();
+
+      if (top > 100) {
+          $('body').addClass('header-scroll');
+      } else {
+          $('body').removeClass('header-scroll');
+      };
+
+      if (top > 700) {
+          $('.navigateElements').addClass('fixMenu');
+      } else {
+          $('.navigateElements').removeClass('fixMenu');
+      };
+
+  });
+});   
+</script>

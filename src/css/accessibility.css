@@ -1,0 +1,290 @@
+/* MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU */
+
+.body-container.accessibility .site-header {
+    background: black !important;
+}
+
+.body-container.accessibility .site-header .main-menu nav a {
+    color: yellow !important;
+}
+
+.body-container.accessibility span.sitePhone {
+    color: yellow !important;
+}
+
+.body-container.accessibility .site-header .social a img.white {
+    display: inline-block !important;
+}
+
+.body-container.accessibility .site-header .social a img.black {
+    display: none !important;
+}
+
+
+/* END MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU  MENU */
+
+.accessibility.welcome_index .section1 {
+    background: black;
+}
+
+.accessibility.welcome_index .section1 h1 {
+    color: yellow;
+}
+
+.accessibility.welcome_index .section1 img {
+    visibility: hidden;
+}
+
+.accessibility  .HomePage .MuiTabs-flexContainer button.MuiButtonBase-root,
+.accessibility  .HomePage .MuiBox-root .searchCity .MuiFormLabel-root,
+.accessibility  .HomePage section.HomeProjects .MuiBox-root .HomeProjectCard h2
+{
+    color: black;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility  .HomePage section.HomeProjects .MuiBox-root .HomeProjectCard button {
+    background: black;
+    color: yellow;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility  footer.site-footer section.formSec {
+    background: black !important;
+    color: yellow;
+}
+
+.accessibility  footer.site-footer .form-wrapper .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+    color: yellow;
+}
+
+.accessibility footer.site-footer .form-wrapper .selectFormGroup select {
+    background-color: black;
+    color: yellow;
+}
+
+
+.accessibility footer.site-footer .siteMapTable .col.sites ul li a {
+    color: black;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility .AllProjectsPage nav {
+    background: black;
+    
+}
+
+.accessibility .AllProjectsPage nav button {
+    color: yellow;
+}
+
+.accessibility .AllProjectsPage nav button.active {
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility .AllProjectsPage .HomeProjectCard button,
+.accessibility .AllProjectsPage .HomeProjectCard:hover button {
+    background-color: black;
+    font-family: "fb_regular","helvetica","arial";
+    color: yellow;
+}
+
+.accessibility .AllProjectsPage .HomeProjectCard h2 {
+    color: black;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+
+.accessibility .AllProjectsPage .searchCity .MuiFormLabel-root {
+    color: black;
+}
+
+.accessibility .MuiChip-root {
+    background: black;
+    color: yellow;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility .CenterPage header,
+.accessibility .JobsPage header
+{
+    background: white;
+}
+
+.accessibility .CenterPage nav a .text h2 {
+    color: black;
+}
+
+.accessibility .CenterPage nav a:hover .text h2,
+.accessibility .CenterPage nav a:focus .text h2 {
+    
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility .CenterPage button.fakeBtn {
+    background: black !important;
+    color: yellow;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+
+.accessibility .ArticlePage nav a {
+    color: black;
+    font-family: "fb_regular","helvetica","arial";
+}
+
+.accessibility .AboutPage .greyPass {
+    background: white;
+}
+
+.accessibility .AboutPage .MuiContainer-root .tableAbout .text {
+    color: black;
+}
+
+.accessibility .JobsPage .accordion .card .card-body,
+.accessibility .JobsPage iframe
+{
+    background: white;
+}
+
+
+.accessibility .projectView .tableProject .col.navProj {
+    background: white;
+    color: black;
+}
+
+.accessibility .projectView .tableProject .navProj header .text {
+    color: black;
+}
+
+.accessibility .projectView .tableProject .infoProject section.plans .carousel-item .carousel-caption {
+    background: black;
+    color: yellow;
+}
+
+.accessibility .projectView .tableProject .infoProject section.technics {
+    background: black !important; 
+}
+
+.accessibility .projectView .tableProject .infoProject section.technics h2 {
+    color: yellow;
+}
+
+.accessibility .projectView .tableProject .infoProject section.technics ul li {
+    color: yellow;
+}
+
+.accessibility .greyColor {
+    background: white;
+}
+
+
+.accessibility section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col.title {
+    background: black;
+    color: yellow;
+}
+
+.accessibility section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col {
+    background: white;
+    border: 1px solid black;    
+}
+
+.accessibility .ShowMigrashData table tr th {
+    background: black;
+    color: yellow;
+}
+
+.accessibility .searchBar .migrasQuads a.quad {
+    background: black;
+}
+
+.accessibility .smallText {
+    background: black;
+    color: yellow;
+}
+
+.accessibility section.DoccumentsFiles {
+    background: black;
+}
+
+
+.accessibility footer.site-footer .downTextFooter a,
+.accessibility footer.site-footer .beitShemeshFooter p
+{
+    color: black;
+}
+
+.accessibility .ShowMigrashData table tr td {
+    background: white;
+    color: black;
+}
+
+.accessibility section.DeppartmentFile .buidingsFiles h3 {
+    color: black;
+}
+.accessibility section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col a  {
+    color: black;
+}
+
+.accessibility .Mortgage .card-body {
+    background: white;
+    color: black;
+}
+
+.accessibility .payments .moreText .textCont .columns .colText,
+.accessibility .section1 .tableSec,
+.accessibility .city h1,
+.accessibility .purchaseProcess .bullets ul li p.text,
+.accessibility .city .text
+{
+    color: black;
+}
+
+
+/* MOBILE  MOBILE  MOBILE  MOBILE  MOBILE  MOBILE  MOBILE  MOBILE  MOBILE */
+
+.accessibility section.city,
+.accessibility header.circleHeader,
+.accessibility .purchaseProcess .moreText .textCont
+{
+    background:white;
+}
+
+.accessibility.city .text h1,
+.accessibility .purchaseProcess .text h2 {
+    color: black;
+}
+
+.accessibility .purchaseProcess .text .moreText h2 {
+    color: yellow;
+    background: black;
+}
+
+.accessibility .Mortgage .accordion .card {
+    background: black;
+}
+
+.accessibility .Mortgage .accordion .card button {
+    color: yellow;
+}
+
+.accessibility .Mortgage .accordion .card div.collapse {
+    background: white;
+}
+
+.accessibility.mobile .site-header .openIcon span {
+    background: white;
+}
+
+.accessibility.mobile .section1 {
+    background: white;
+}
+
+.accessibility.mobile section.project {
+    background: white;
+    color: black;
+}
+
+.accessibility.mobile .project .text .textParagraph {
+    color: black;
+}

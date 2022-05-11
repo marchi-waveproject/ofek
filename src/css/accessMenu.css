@@ -1,0 +1,176 @@
+.body-container.zoomIn {
+    
+    transform-origin: top right;
+    -moz-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.body-container.linksOn a,
+.body-container.linksOn button
+{
+    text-decoration: underline !important;
+}
+
+.body-container.fontsOn,
+.body-container.fontsOn h1,
+.body-container.fontsOn h2,
+.body-container.fontsOn h3,
+.body-container.fontsOn p,
+.body-container.fontsOn button,
+.body-container.fontsOn a
+{
+    
+    font-family: "helvetica","arial" !important;
+}
+
+.accessMenu {
+    position: fixed;
+    top: 150px;
+    right: -280px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    z-index: 1081;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.accessMenu.opened {
+    right: 0;
+}
+
+
+.accessMenu button.openMenu {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 5px 2px 5px 10px;
+    background: rgb(10, 118, 190);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    cursor: pointer;
+}
+
+.accessMenu.opened button.openMenu,
+.accessMenu button.openMenu:focus,
+.accessMenu button.openMenu:hover {
+    background: black;
+    border: 1px solid white;
+}
+
+
+.accessMenu button.openMenu img {
+    width: 30px;
+}
+
+.accessMenu .menuCont  {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 280px;
+    background: rgb(10, 118, 190);
+    padding: 0px 0px;
+}
+
+
+.accessMenu .menuCont  ul {
+    padding: 0;
+    margin: 0;
+}
+
+.accessMenu .menuCont  ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);;
+}
+
+.accessMenu .menuCont  ul li:last-child {
+    border: none;
+} 
+
+.accessMenu .menuCont  ul li button,
+.accessMenu .menuCont  ul li a
+{
+    padding: 20px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    font-family: "fb_regular","helvetica","arial";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.accessMenu .menuCont  ul li figure {
+    margin: 0;
+}
+.accessMenu .menuCont  ul li figure figcaption {
+    margin: 10px 0 0px 0;
+}
+
+.accessMenu .menuCont  ul li figure img {
+    height: 50px;
+}
+
+.accessMenu .menuCont  ul li.active button {
+    background: grey;
+}
+
+.accessMenu .menuCont  ul li button:focus,
+.accessMenu .menuCont  ul li button:hover,
+.accessMenu .menuCont  ul li a:focus,
+.accessMenu .menuCont  ul li a:hover
+{
+    background: black;
+    color: yellow;
+}
+
+
+
+/*    ----   MOBILE MOBILE MOBILE ----- */
+
+.mobile .accessMenu {
+    right: -150px;
+    height: 60px;
+    top: 0;
+    margin-top: 30%;
+
+}
+
+.mobile .accessMenu.opened {
+    right: 0;
+}
+
+.mobile .accessMenu .menuCont {
+    width: 150px;
+}
+
+.mobile .accessMenu .menuCont ul li figure img {
+    width: 35px;
+}
+
+.mobile .accessMenu .menuCont ul li figure figcaption {
+    font-size: 16px;
+    margin: 0;
+}
+
+.mobile .accessMenu .menuCont ul li button,
+.mobile .accessMenu .menuCont ul li a {
+    padding: 10px;
+}
+
+.mobile .accessMenu button.openMenu {
+    width: 50px;
+    height: 50px;
+    padding: 0px 2px 2px 10px; 
+}
+
+.mobile .accessMenu button.openMenu img {
+    width: 23px;
+}
+
+
+/*    ----   END MOBILE MOBILE MOBILE ----- */

@@ -1,0 +1,108 @@
+import React, { Component } from 'react';
+import SiteConnector  from './SiteConnector';
+//import Test  from './test';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; //npm install react-router-dom
+import { isMobile } from "react-device-detect"; //npm install react-device-detect //https://www.npmjs.com/package/react-device-detect
+import { RestUrls } from "./Components/Urls"
+import { getId } from "./Components/getId"
+
+//import {getAllUrlParams} from "./Components/getAllUrlParams"
+
+//import logo from './logo.svg';
+//import './App.css';
+
+/* import { ConstantsNames } from "./Urls";*/
+
+
+export default class App extends Component {
+
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      media: isMobile ? 'mobile' : 'desktop',
+      lang: 'he',
+      SiteDataitems: [],
+      isReady: false,
+      formData: {}
+    } 
+  }
+
+ 
+
+  async componentDidMount() {
+
+    const API =  RestUrls.SiteData;
+    
+    
+
+    const res = await fetch(API)
+    const data = await res.json();
+
+
+    this.setState(
+        {SiteDataitems: data,
+          isReady: true}
+    )
+  
+}
+  
+
+  
+  render() {
+    
+    
+    
+    if(this.state.isReady) {
+      
+        //let ProjetsLow = this.state.SiteDataitems.ProjetsLow;
+        /* console.log(ProjetsLow);     */
+        /* console.log(this.state); */
+
+        return <React.Fragment>
+            
+          <Router>
+          
+            <Route path={"/"} component={getId} />
+
+            <Switch>
+              <Route exact path="/" component={() => <SiteConnector  page="welcome/beitShemesh" info={this.state} />} />
+
+              
+              {this.state.SiteDataitems.pages.map(pageData => (
+                <Route 
+                  key={pageData.id} exact path={'/' + pageData.seo.friendly}
+                  component={() => <SiteConnector idProj={this.getId} page={pageData.seo.controller + '/' +  pageData.seo.method}
+                  info={this.state} />}/>  
+              )
+              )}
+              
+              {/* {ProjetsLow.map(projectsData => (
+                  
+                <Route 
+                    key={'proj' + projectsData.data.id } exact path={ConstantsNames.projectsPageName + projectsData.seo.friendly }
+                    component={() => <SiteConnector  page={'welcome/project'}  friendProj={projectsData.seo.friendly} info={this.state}  />}/>  
+                )
+              )} */}
+
+              {/* <Route path={ConstantsNames.centerPageName + ':id'} component={() => <SiteConnector  page="welcome/center" info={this.state} />} /> */}
+
+              <Route component={() => <SiteConnector  page="welcome/error404Page" info={this.state} />} />
+            </Switch>
+            
+          </Router>
+            
+          </React.Fragment>
+    } else {
+
+    return <div>טוען...</div>
+
+    }
+
+
+  }
+
+    
+
+}

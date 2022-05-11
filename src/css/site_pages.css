@@ -1,0 +1,1259 @@
+
+.smallText {
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: grey;
+}
+
+.site-header nav a {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus
+{  
+    text-decoration: underline !important;
+    color: black !important;
+}
+
+.site-header nav a.is-active,
+.site-header nav a:hover,
+.site-header nav a:focus
+{
+    color: #3d8597 !important;
+    font-family: "fb_regular","helvetica","arial";
+    
+}
+
+header.topheader {
+    position: relative;
+}
+
+header.topheader .searchBar {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    /* width: 1150px; */
+    margin: 0 -575px 0 0;
+    right: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.searchBar {
+    padding: 40px 60px 0px;
+    
+}
+
+.searchBar .inputsContent {
+    display: inline-block;
+    
+}
+
+.searchBar .inputsContent .form-group {
+    display: inline-block;
+    width: 240px;
+    margin: 0 0 0 30px;
+}
+
+.searchBar h2 {
+    font-family: "fb_regular","helvetica","arial" !important;
+    font-size: 28px;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    vertical-align: top;
+}
+
+.searchBar .downFilters {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.searchBar .downFilters label {
+    margin: 0 20px 0 0;
+}
+
+.searchBar a.lupaBtn {
+    width: 35px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.searchBar a.lupaBtn:hover,
+.searchBar a.lupaBtn:focus
+{
+    width: 45px;
+}
+
+.searchBar a.lupaBtn img {
+    width: 100%;
+}
+
+
+/* .HomePage section.section1 h1 {
+    position:  absolute;
+    width: 100%;
+    top: 0;
+    margin: 10% 0 0 0;
+    text-align: center;
+    font-family: "fb","helvetica","arial";
+    color: white;
+    font-size: 54px;
+} */
+
+
+.ShowMigrashData {
+    padding: 20px 0;
+}
+
+
+section.Prices .searchBar  {
+    padding: 60px 0 0px;
+}
+
+.searchBar .migrasQuads {
+    width: 90%;
+    display: table;
+    margin: 0 auto;
+    margin: 40px auto 0;
+}
+
+.searchBar .migrasQuads a.quad {
+    display: table-cell;
+    border-left: 2px solid white;
+    text-align: center;
+    background: #306A78;
+    padding: 40px 0;
+    color: white;
+    opacity: .5;
+}
+
+.searchBar .migrasQuads a.quad.active,
+.searchBar .migrasQuads a.quad:hover,
+.searchBar .migrasQuads a.quad:focus
+{
+    opacity: 1;
+}
+
+
+.ShowMigrashData table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.ShowMigrashData table tr th {
+    background: #3D8597;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    line-height: 1;
+}
+
+.ShowMigrashData table tr td {
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #808080;
+}
+
+.ShowMigrashData table tr td strong {
+    font-family: "fb_regular","helvetica","arial" !important;
+    font-size: 20px;
+}
+
+.ShowMigrashData table tr.trSold td  {
+    color: white !important;
+}
+
+.ShowMigrashData table tr.trSold td {
+    background: #306a78 !important;
+    border-bottom-color: white;
+   
+}
+
+.ShowMigrashData table tr td.toPDFFile a img {
+    width: 35px;
+    height: 40px;
+}
+
+.ShowMigrashData table tr td.toPDFFile a img:hover,
+.ShowMigrashData table tr td.toPDFFile a img:focus
+{
+    width: 38px;
+    height: 43px;
+}
+
+
+.ShowMigrashData table tr td:nth-child(odd) {
+    background: #F2F2F2;
+}
+
+.ShowMigrashData table tr td:nth-child(even) {
+    background: #EDEDED;
+}
+
+
+
+.section1 {
+    padding: 60px 0 50px 0;
+}
+
+.section1 .sec1_h2 {
+    font-family: "fb_regular","helvetica","arial";
+    font-size: 40px;
+    /* font-family: "fb_bold","helvetica","arial"; */
+    text-align: center;
+    color: #3d8597;
+}
+
+
+.section1 .tableSec {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section1 .tableSec .col {
+    padding: 40px 0 80px;
+    width: 50%;
+}
+
+.section1 .tableSec img {
+    height: 78px;
+    margin-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.section1 .tableSec .text {
+    width: 385px;
+    margin: 0 40px 0 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+
+
+header.circleHeader {
+    width: 273px;
+    height: 273px;
+    padding: 40px;
+    margin: -100px auto;
+    z-index: 10;
+    position: relative;
+    background: #f2f2f2;
+
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+    text-align: center;
+}
+
+header.circleHeader img {
+    width: 99px;
+    height: 56px;
+
+}
+
+header.circleHeader h2 {
+    font-size: 35px;
+    line-height: .7;
+    color: #3e8698;
+    font-family: "fb_regular","helvetica","arial";
+    margin: 20px 0 0 0;
+}
+
+.city {
+    background: #f2f2f2;
+    padding: 0px 0 50px 0;
+}
+
+.city .text {
+    padding: 100px 0 100px 0;
+    text-align: justify;
+    width: 944px;
+}
+
+.city .text h1 {
+    text-align: center;
+    font-family: "fb_bold","helvetica","arial";
+    color: #808080;
+}
+
+.project {
+    background: #f0f0f0;
+    padding: 0 0 100px 0;
+}
+
+.project header.circleHeader {
+    padding: 70px 40px;
+    background: white;
+}
+
+.project .text {
+    width: 1189px;
+    height: 911px;
+    background: center center no-repeat transparent;
+    margin: 200px auto 0;
+    display: block;
+
+    padding: 160px 0 0px 0;
+
+    position: relative;
+}
+
+.project .text .textParagraph {
+    color: white;
+    width: 470px;
+    margin: 0px 40px 0 0;
+    text-align: justify;
+}
+
+
+.project .text .lupaBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #3e8698;
+    border: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 10px 10px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.project .text .lupaBtn.bigPic2 {
+    margin-left: 650px;
+}
+
+.project .text .lupaBtn:hover,
+.project .text .lupaBtn:focus
+{
+    width: 60px;
+    height: 60px;
+}
+
+.project .text .lupaBtn img {
+    width: 100%;
+}
+
+.project .modal-PopupText .modal-content {
+    background: transparent;
+}
+
+.modal-PopupText .modal-content ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.modal-PopupText .modal-content a:hover,
+.modal-PopupText .modal-content a:focus {
+    color: black;
+}
+
+
+
+.purchaseProcess {
+    text-align: center;
+    padding: 100px 0 160px;
+}
+
+.purchaseProcess h2 {
+    color: #666666;
+    font-family: "fb_regular","helvetica","arial";
+    font-size: 40px;
+}
+
+
+.purchaseProcess .bullets ul {
+    margin: 100px 0 0 0;
+}
+
+.purchaseProcess .bullets ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 235px;
+    margin: 0 20px 30px;
+    font-size: 16px;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+.purchaseProcess .bullets ul li p.text {
+    min-height: 170px;
+}
+
+.purchaseProcess .bullets ul li:hover .readMore, 
+.purchaseProcess .bullets ul li:focus .readMore,
+.purchaseProcess .bullets ul li a:hover.readMore, 
+.purchaseProcess .bullets ul li a:focus.readMore{
+    text-decoration: underline;
+}
+
+.purchaseProcess .bullets ul li a.readMore {
+    font-family: "fb_regular","helvetica","arial";
+    color: black;
+}
+
+
+.purchaseProcess .bullets ul li strong {
+    font-family: "fb_regular","helvetica","arial";
+    font-size: 26px;
+    color: #3d8597;
+    letter-spacing: -1px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    line-height: 0.9;
+}
+
+.purchaseProcess .bullets ul li:before {
+    content: "";
+    background: center center transparent no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 102px;
+    height: 120px;
+    margin: 0 auto 10px;
+
+}
+
+.purchaseProcess .bullets ul li:nth-child(1):before {background-image: url('../img/icons/bullets/1.svg');}
+.purchaseProcess .bullets ul li:nth-child(2):before {background-image: url('../img/icons/bullets/2.svg');}
+.purchaseProcess .bullets ul li:nth-child(3):before {background-image: url('../img/icons/bullets/3.svg');}
+.purchaseProcess .bullets ul li:nth-child(4):before {background-image: url('../img/icons/bullets/4.svg');}
+
+.payments {
+    padding: 0 0 100px 0;
+    margin: 0 0 -100px 0;
+}
+
+.payments header.circleHeader {
+    background: white;
+    width: 340px;
+    height: 340px;
+    padding: 140px 0 0 0;
+}
+
+.payments header.circleHeader h2 {
+    line-height: .8;
+}
+
+
+.payments .greyColor {
+    background: #f0f0f0;
+    margin: -150px 0 0 0;
+    padding: 190px 0 60px 0;
+}
+
+.payments .moreText {
+    text-align: right;
+    margin: 40px 0 0 0;
+}
+
+.payments .moreText h2 {
+    font-family: "fb_regular","helvetica","arial";
+    background: #306a78;
+    color: white;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 21px;
+    padding: 15px 30px;
+}
+
+.payments .moreText .textCont {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 30px;
+}
+
+.payments .moreText .textCont .columns .colText {
+    display: inline-block;
+    width: 50%;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.payments .moreText .textCont .Text {
+    margin: 20px 0 0 0;
+}
+
+.payments .moreText .textCont .Text h3 {
+    font-size: 21px;
+    font-family: "fb_regular","helvetica","arial";
+    color: #306a78;
+}
+
+.payments .moreText .textCont .Text ol,
+.payments .moreText .textCont .Text ul {
+    margin: 20px 0 0 0;
+}
+
+.payments .moreText .textCont .Text li {
+    margin: 0 0 5px 0;
+}
+
+
+.Mortgage {
+    background: #3d8597;
+    padding: 100px 0;
+}
+
+.Mortgage h2 {
+    font-size: 40px;
+    font-family: "fb_regular","helvetica","arial";
+    color: white;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.Mortgage .accordion .card {
+    margin: 0 0 20px 0;
+    background: #306a78;
+    border: none;
+    text-align: right;
+}
+
+.Mortgage .accordion .card .card-header {
+    padding: 0;
+}
+
+.Mortgage .accordion .card .card-header button {
+    width: 100%;
+    background: #306a78;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: right; 
+    background: url('../img/icons/white/downWhite.svg') 20px center no-repeat transparent;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+.Mortgage .accordion .card .card-header button:active,
+.Mortgage .accordion .card .card-header button:focus
+{
+    background-image: url('../img/icons/white/upWhite.svg');
+}
+
+.Mortgage .accordion .card div.collapse,
+.Mortgage .accordion .card div.collapsing
+{
+    background: white;
+    color: #808080;
+    padding: 10px;
+}
+
+section.Prices {
+    padding: 50px 0;
+}
+
+section.Prices .searchBar .contsearchBar {
+    width: 1010px;
+    margin: 0 auto;
+}
+
+section.Prices h2 {
+    font-family: "fb_regular","helvetica","arial";
+    color: #3d8597;
+    text-align: center;
+}
+
+
+section.DeppartmentFile {
+    padding: 20px 0 0 0;
+}
+
+section.DeppartmentFile .overFlow {
+    overflow-x: auto;
+    position: relative;
+}
+
+section.DeppartmentFile .chooseBuilding {
+    background: center center #3d8597 no-repeat;
+    
+    width: 1900px;
+    margin: 0 auto;
+    height: 870px;
+    position: relative;
+}
+
+section.DeppartmentFile .chooseBuilding h2 {
+    text-align: center;
+    color: white;
+    padding: 150px 0 0 0;
+    line-height: 1;
+    font-size: 34px;
+}
+
+section.DeppartmentFile .chooseBuilding h2 strong {
+    display: block;
+    font-family: "fb_regular","helvetica","arial";
+    font-weight: regular;
+}
+
+section.DeppartmentFile .chooseBuilding button {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 150px;
+    height: 290px;
+    border:none;
+    cursor: pointer;
+    background:none;
+    /* background:rgb(255,0,0,0.5); */
+}
+
+
+
+section.DeppartmentFile .chooseBuilding button .btnNumber {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    letter-spacing: -2px;
+    padding: 15px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin: 0 -25px 0 0;
+}
+
+
+section.DeppartmentFile .chooseBuilding button img {
+    opacity: 0;
+    filter:alpha(opacity=00);
+    margin: 50px 0 0 0;
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    
+}
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.active .btnNumber,
+section.DeppartmentFile .chooseBuilding button:hover .btnNumber,
+section.DeppartmentFile .chooseBuilding button:focus .btnNumber 
+{
+    background: white;
+    font-family: "fb_regular","helvetica","arial";
+    color: #3d8597;
+    
+}
+
+section.DeppartmentFile .chooseBuilding button.active img,
+section.DeppartmentFile .chooseBuilding button:hover img,
+section.DeppartmentFile .chooseBuilding button:focus img {
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+} 
+
+section.DeppartmentFile .chooseBuilding button.active,
+section.DeppartmentFile .chooseBuilding button:hover,
+section.DeppartmentFile .chooseBuilding button:focus {
+    border: none;
+    outline: none;
+}
+
+
+
+section.DeppartmentFile .chooseBuilding button.building1 {
+    left: 1535px;
+    bottom: 187px;
+    width: 250px;
+}
+
+section.DeppartmentFile .chooseBuilding button.building1 img {
+    
+    width: 221px;
+    height: 293px;
+    margin-top: 80px;
+}
+
+section.DeppartmentFile .chooseBuilding button.building2 {
+    left: 1638px;
+    bottom: 11px;
+    width: 243px;
+    height: 351px;
+}
+
+section.DeppartmentFile .chooseBuilding button.building2 .btnNumber {
+    margin: 0 -90px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building2 img {
+    width: 228px;
+    height: 212px;
+}
+
+
+
+section.DeppartmentFile .chooseBuilding button.building8 {
+    left: 1371px;
+    bottom: 11px;
+    width: 243px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building8 .btnNumber {
+    margin: 30px -90px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building8 img {
+    width: 234px;
+    height: 212px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building9 {
+    left: 1297px;
+    bottom: 101px;
+    width: 243px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building9 .btnNumber {
+    margin: -30px -40px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building9 img {
+    width: 217px;
+    height: 298px;
+}
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building6 {
+    left: 1063px;
+    bottom: 2px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building6 .btnNumber {
+    margin: 25px -132px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building6 img {
+    width: 256px;
+    height: 212px;
+}
+
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building7 {
+    left: 1027px;
+    bottom: 140px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building7 .btnNumber {
+    margin: 8px -63px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building7 img {
+    width: 205px;
+    height: 223px;
+}
+
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building4 {
+    left: 755px;
+    bottom: 8px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building4 .btnNumber {
+    margin: 15px -190px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building4 img {
+    width: 242px;
+    height: 212px;
+}
+
+
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building5 {
+    left: 760px;
+    bottom: 165px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building5 .btnNumber {
+    margin: 35px -62px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building5 img {
+    width: 208px;
+    height: 171px;
+}
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building3 {
+    left: 524px;
+    bottom: 93px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building3 .btnNumber {
+    margin: -35px -52px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building3 img {
+    width: 211px;
+    height: 309px;
+}
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building10 {
+    left: 324px;
+    bottom: 90px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building10 .btnNumber {
+    margin: -35px -52px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building10 img {
+    width: 194px;
+    height: 290px;
+}
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building11 {
+    left: 166px;
+    bottom: 87px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building11 .btnNumber {
+    margin: -35px -52px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building11 img {
+    width: 166px;
+    height: 276px;
+}
+
+
+
+
+
+section.DeppartmentFile .chooseBuilding button.building12 {
+    left: 4px;
+    bottom: 24px;
+    width: 263px;
+    height: 351px;
+}
+
+
+section.DeppartmentFile .chooseBuilding button.building12 .btnNumber {
+    margin: -35px -52px 0 0;
+}
+
+section.DeppartmentFile .chooseBuilding button.building12 img {
+    width: 201px;
+    height: 222px;
+}
+
+
+
+
+
+
+section.DeppartmentFile .buidingsFiles {
+    background: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+
+section.DeppartmentFile .buidingsFiles h3 {
+    font-family: "fb_regular","helvetica","arial";
+    color: #3d8597;
+    font-size: 60px;
+    letter-spacing: -2px;   
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.DeppartmentFile .buidingsFiles .changeBuildSelect {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 30px 0 0;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles {
+    margin: 50px 0 0 0;
+    display: table;
+    width: 100%;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles {
+    display: table-row;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col {
+    vertical-align: text-top;
+    width: 50%;
+    padding: 20px 20px 0;
+    background: #f2f2f2;
+    border-bottom: 10px solid white;
+    text-align: center;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col:first-child {
+    border-left:  10px solid white;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col.title {
+    background: #306370;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col a {
+    color: grey;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 20px;
+}
+
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col:nth-child(1) a span {
+    margin: 0 0 0 10px;
+}
+
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col:nth-child(2) a span {
+    display: block;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col a img {
+    width: 35px;
+    height: 40px;
+}
+
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col a:hover img,
+section.DeppartmentFile .buidingsFiles .tableFiles .RowtableFiles .col a:focus img
+{
+    width: 38px;
+    height: 43px;
+}
+
+
+
+
+
+.modal-PopupText {
+    margin-top: 0px;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, .7);
+}
+
+.modal-PopupText .modal-dialog {
+    max-width: 80%;
+}
+
+.modal-PopupText .modal-content {
+    background: #3D8597;
+    border-radius: 0;
+    border: none;
+    padding: 0px 10%;
+}
+
+.modal-PopupText .modal-content .modal-body button.close {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    color:  #3D8597;
+    font-size: 30px;
+    opacity: 1;
+    top: -20px;
+    position: absolute;
+    right: 30px;
+}
+
+.modal-PopupText .modal-content .modal-body button.close:hover,
+.modal-PopupText .modal-content .modal-body button.close:focus
+{
+    background: black;
+    color: white;
+}
+
+
+.modal-PopupText .modal-content div {
+    color: white;
+}
+
+.modal-PopupText .modal-content h3 {
+    /* color: #1E454C; */
+    color: white;
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+
+
+
+.modal-PopupText .modal-content ul li::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    display: block;
+    margin: 20px auto;
+    background: center center transparent no-repeat url('../img/icons/downArrow.svg');
+    background-size: 100%;
+}
+
+.modal-PopupText .modal-content .modal-footer .btn {
+    margin: 0 auto;
+}
+
+.modal-PopupText .modal-content .modal-footer .btn:hover,
+.modal-PopupText .modal-content .modal-footer .btn:focus
+{
+    background: black;
+    color: white;
+}
+
+.modal-PopupText.modal-Picture .modal-dialog {
+    max-width: 80%;
+}
+
+.modal-PopupText.modal-Picture .modal-content {
+    padding: 0;
+}
+
+.modal-PopupText.modal-Picture .modal-content .modal-body img {
+    margin: 20px 0 0 0;
+}
+
+
+.modal-PopupText.modal-Picture .owl-carousel .owl-nav {
+    margin-top: 25%;
+}
+
+.modal-PopupText.modal-Picture .owl-carousel .owl-dots {
+    margin: 20px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+.section1 .pictures {
+    text-align: center;
+}
+
+.section1 .pictures .item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 10px 20px;
+}
+
+.section1 .pictures .item .hover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    background: rgba(62, 134, 152, .9);
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 85px 0 0 0;
+    display: none;
+}
+
+.section1 .pictures .item .hover strong {
+    font-size: 30px;
+    display: block;
+}
+
+.section1 .pictures .item:hover .hover {
+    display: block;
+}
+
+
+section.MapsPictures {
+    background: white;
+    position: relative;
+    min-height: 400px;
+    padding: 50px 0 120px;
+    text-align: center;
+}
+
+section.MapsPictures h2 {
+    color:#3E8698;
+    font-family: "fb_regular","helvetica","arial";
+    font-size: 40px;
+}
+
+
+section.MapsPictures .pictures {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+
+section.MapsPictures .pictures .item {
+    width: 585px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0 10px 20px;
+    cursor: pointer;
+}
+
+section.MapsPictures .pictures .item img.mainPic {
+    width: 100%;
+}
+
+section.MapsPictures .pictures .item img.lupa {
+    width: 32px;
+    display: block;
+    margin: 10px auto;
+}
+
+section.MapsPictures .pictures .item .hover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    background: rgba(62, 134, 152, .9);
+    color: white;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 160px 0 0 0;
+    display: none;
+}
+
+
+section.MapsPictures .pictures .item:hover .hover {
+    display: block;
+}
+
+section.DoccumentsFiles {
+    background: #3D8597;
+    padding: 100px 0 50px 0;
+    color: white;
+    text-align: center;
+}
+
+section.DoccumentsFiles .allFiles {
+    margin: 50px 0 0 0;
+}
+
+section.DoccumentsFiles .allFiles a {
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 20px 40px;
+    max-width: 200px;
+    line-height: 1;
+
+}
+
+section.DoccumentsFiles .allFiles a:hover,
+section.DoccumentsFiles .allFiles a:focus
+{
+    text-decoration: underline;
+}
+
+section.DoccumentsFiles .allFiles a img {
+    width: 50px;
+    height: 57px;
+    margin: 0 auto 10px;
+    display: block;
+
+}
+
+footer.site-footer {
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+
+footer.site-footer .downTextFooter a {
+    color: grey;
+}
+
+
+footer.site-footer .beitShemeshFooter img {
+    margin: 0 0 30px 0;
+}
+
+footer.site-footer .beitShemeshFooter h2 {
+    line-height: 1;
+    margin: 0;
+}
+
+footer.site-footer .beitShemeshFooter p {
+    margin: 0 0 70px 0;
+    color: #808080;
+}
+
