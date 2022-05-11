@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; //npm
 import { isMobile } from "react-device-detect"; //npm install react-device-detect //https://www.npmjs.com/package/react-device-detect
 import { RestUrls } from "./Components/Urls"
 import { getId } from "./Components/getId"
+import Loading from './Components/utils/Loading';
+
+//npm install @mui/material @emotion/react @emotion/styled
+//npm install @mui/material @mui/styled-engine-sc styled-components
+
 
 //import {getAllUrlParams} from "./Components/getAllUrlParams"
 
@@ -67,7 +72,7 @@ export default class App extends Component {
             <Route path={"/"} component={getId} />
 
             <Switch>
-              <Route exact path="/" component={() => <SiteConnector  page="welcome/beitShemesh" info={this.state} />} />
+              <Route exact path="/" component={() => <SiteConnector  page="welcome/homepage" info={this.state} />} />
 
               
               {this.state.SiteDataitems.pages.map(pageData => (
@@ -96,7 +101,9 @@ export default class App extends Component {
           </React.Fragment>
     } else {
 
-    return <div>טוען...</div>
+    return <div>
+      <Loading open={true} noBackdrop={false} />
+    </div>
 
     }
 

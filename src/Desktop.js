@@ -7,8 +7,9 @@ import Footer from './Components/pages/desktop/Footer';
 import Accessibility from './Components/Accessibility';
 
 import './css/animate.min.css'; /* https://daneden.github.io/animate.css/ */
-import './css/site.css';
-import './css/site_pages.css';
+import './css/variables.scss';
+import './css/site.scss';
+import './css/site_pages.scss';
 import './css/accessibility.css';
 
 export default class Desktop extends Component {
@@ -24,7 +25,7 @@ export default class Desktop extends Component {
                     <ContentWrapper page={this.props.page} info={this.props.info} friendProj={this.props.friendProj} />
                 </div>
 
-                <Footer {...this.props}/>
+                {this.props.page === 'welcome/beitShemesh' && <Footer {...this.props}/> }
 
             </div>
         )

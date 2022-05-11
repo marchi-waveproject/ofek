@@ -9,6 +9,7 @@ import Seo from './../Seo';
 import Page404  from './pages/Page404';
 
 import Accessibility  from './pages/desktop/Accessibility/Accessibility';
+import HomePage from './pages/desktop/HomePage/HomePage';
 
 
 export default class ContentWrapper extends Component {
@@ -86,6 +87,13 @@ export default class ContentWrapper extends Component {
                         <React.Fragment>
                             <Seo infoSite={this.props.info} pageData={items} />
                             <Page404 />
+                        </React.Fragment>
+                    )
+
+                case "welcome/homepage":
+                    return (
+                        <React.Fragment>
+                            <HomePage infoSite={this.props.info} />
                         </React.Fragment>
                     )
 

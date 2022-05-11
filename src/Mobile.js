@@ -6,8 +6,8 @@ import Footer from './Components/pages/mobile/Footer';
 
 import Accessibility from './Components/Accessibility';
 
-import './css/m_site.css';
-import './css/m_site_pages.css';
+import './css/m_site.scss';
+import './css/m_site_pages.scss';
 
 export default class Mobile extends Component {
     render() {
