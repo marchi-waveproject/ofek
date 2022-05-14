@@ -93,7 +93,7 @@ export default class ContentWrapper extends Component {
                 case "welcome/homepage":
                     return (
                         <React.Fragment>
-                            <HomePage infoSite={this.props.info} />
+                            <HomePage infoSite={this.props.info} pageData={items} />
                         </React.Fragment>
                     )
 

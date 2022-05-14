@@ -1,3 +1,271 @@
+@import '../../../../css/variables.scss';
+
 .body-container.welcome_homepage {
     padding: 0;
+
+    .wrapper {
+        width: 1281px;
+    }
+}
+
+
+.projectsCont {
+
+    background: #F4F4F4;
+    padding: 50px 0;
+    color: $black;
+
+    a {
+        text-decoration: none !important;
+
+    }
+
+    h1 {
+        color: $black;
+        text-align: center;
+        font-size: 26px;
+        font-family: $fontMedium;
+        letter-spacing: -2px;
+        margin: 0 0 30px 0;
+    }
+    
+    
+
+    .projectsFlex {
+
+        
+        display: flex;
+        justify-content: space-between;
+
+        .projectHome {
+
+            cursor: default;
+
+            .dataLine {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0 0 0;
+
+                h2 {
+                    color: $black;
+                    font-size: 22px;
+                    font-family: $fontMedium;
+                    letter-spacing: -1px;
+                    margin: 0px 0 0 0;
+    
+                    small {
+                        font-family: $fontLight;
+                        font-size: 22px;
+                    }
+                }
+
+                .fakeBtn {
+                    
+                    color: $black;
+                    font-size: 18px;
+                    font-family: $fontRegular;
+                    letter-spacing: -1px;
+                    background: white;
+                    
+                    border: 1px solid #DEDEDE;
+                    border-radius: 5px;
+                    padding: 10px 50px;
+
+                    opacity: .6;
+                    
+                }
+
+            }
+
+            &.link {
+                cursor: pointer;
+
+                &:hover, &:focus {
+                    
+                    .fakeBtn {
+                        background: $black;
+                        color: white;
+                    }
+
+                }
+
+                .fakeBtn {
+                    opacity: 1;
+                }
+            }
+            
+            figure {
+
+                position: relative;
+                margin: 0 0 0 0;
+
+                div {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    p {
+                        color: white;
+                        padding: 5px 65px;
+                        font-size: 36px;
+                        background: black;
+                        font-family: $fontMedium;
+                        letter-spacing: -1px;
+                        margin: 0;
+                    }
+                    
+
+                }
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+
+            }
+            
+        }
+        
+    }
+
+}
+
+.menuHomepage {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .rItems {
+
+        display: flex;
+        gap: 80px;
+        align-items: center;
+
+        img.logoMenu {
+            width: 120px;
+        }
+
+        ul {
+
+            display: flex;
+            gap: 120px;
+            margin: 0;
+
+            li {
+                color: $black;
+                font-size: 18px;
+                font-family: $fontMedium;
+                letter-spacing: -1px;
+
+                &:last-child, &:first-child {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .lItems {
+
+        p {
+            padding: 5px 0 0 0;
+            direction: ltr;
+            margin: 0;
+            color: $black;
+            text-align: center;
+            font-size: 31px;
+            font-family: $fontMedium;
+            letter-spacing: -2px;
+
+            small {
+                vertical-align: top;
+                display: inline-block;
+                margin: 10px 2px 0 0;
+            }
+        }
+
+    }
+    
+
+
+}
+
+.down {
+
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+
+    .aboutLinks {
+
+        width: 530px;
+        border-left: 1px solid #BDBDBD;
+        padding-left: 40px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+
+            img.logoOfekSheliNormal {
+                width: 108px;
+            }
+
+            .allLinks {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0 0 0;
+
+
+                img {
+                    height: 20px;
+                }
+
+                p {
+                    border-right: 1px solid #252626;
+                    margin: 3px 0 0 0;
+                    padding: 0px 8px 0 0;
+                    line-height: 1;
+                    direction: ltr;
+                    font-family: $fontMedium;
+                    color: $black;
+                }
+
+            }
+
+        }
+        
+
+        .text {
+            font-size: 16px;
+            line-height: 1.25;
+            width: 350px;
+            font-family: $fontRegular;
+            color: $black;
+        }
+
+    }
+
+    .contactForm {
+        width: 530px;
+        padding-right: 40px;
+
+        h2 {
+            color: $black;
+            font-size: 16px;
+            font-family: $fontMedium;
+            letter-spacing: -1px;
+        }
+    }
+
 }

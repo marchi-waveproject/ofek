@@ -7,7 +7,6 @@ import Footer from './Components/pages/desktop/Footer';
 import Accessibility from './Components/Accessibility';
 
 import './css/animate.min.css'; /* https://daneden.github.io/animate.css/ */
-import './css/variables.scss';
 import './css/site.scss';
 import './css/site_pages.scss';
 import './css/accessibility.css';
