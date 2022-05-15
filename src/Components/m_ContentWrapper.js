@@ -16,7 +16,7 @@ import Jobs  from './pages/mobile/Jobs/Jobs';
 import Calc  from './pages/desktop/Calc/Calc'; */
 
 import Accessibility  from './pages/mobile/Accessibility/Accessibility';
-
+import HomePage from './pages/desktop/HomePage/HomePage';
 import Page404  from './pages/Page404';
 
 
@@ -81,6 +81,13 @@ export default class ContentWrapper extends Component {
                         </React.Fragment>
                     )
 
+
+                case "welcome/homepage":
+                    return (
+                        <React.Fragment>
+                            <HomePage infoSite={this.props.info} pageData={items} />
+                        </React.Fragment>
+                    )
 
                 case "welcome/accessibility":
                     return (

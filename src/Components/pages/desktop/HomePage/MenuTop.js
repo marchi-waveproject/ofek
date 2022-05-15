@@ -1,6 +1,7 @@
 import React from 'react'
 
 import logoMenu from './../../../../img/default/logoBlack.svg'
+
 import { animateScroll as scroll, } from 'react-scroll' /* https://www.npmjs.com/package/react-scroll */
 
 export default function MenuTop() {

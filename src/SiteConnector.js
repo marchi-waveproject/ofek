@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Desktop from './Desktop';
 import Mobile from './Mobile';
 
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify' //npm i react-toastify
 
 export default class SiteConnector extends Component {
    
@@ -126,29 +128,64 @@ export default class SiteConnector extends Component {
 
         if (this.props.info.media === 'mobile') {
             
-            return <Mobile {...this.props}
+            return <>
+            
+                <Mobile {...this.props}
 
-            accesStates={this.state}
+                accesStates={this.state}
 
-            pageClass={
-                pageClass + ' mobile ' + 
-                this.state.accessibilityClass +  ' ' +
-                this.state.zoomClass +  ' ' +
-                this.state.linksClass +  ' ' +
-                this.state.fontsClass 
-            } accessibility={this.changeAccessibilityClass} />
+                pageClass={
+                    pageClass + ' mobile ' + 
+                    this.state.accessibilityClass +  ' ' +
+                    this.state.zoomClass +  ' ' +
+                    this.state.linksClass +  ' ' +
+                    this.state.fontsClass 
+                } accessibility={this.changeAccessibilityClass} />
+
+                <ToastContainer
+
+                position='top-center'
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop
+                closeOnClick
+                rtl={true}
+                pauseOnVisibilityChange
+                draggable
+                pauseOnHover={true}
+                theme="colored"
+                />
+            
+            </>
         }
 
         else {
-            return <Desktop {...this.props}
-            accesStates={this.state}
-            pageClass={
-                pageClass + ' desktop '  +
-                this.state.accessibilityClass + ' ' +
-                this.state.zoomClass +  ' ' +
-                this.state.linksClass +  ' ' +
-                this.state.fontsClass 
+            return <>
+
+            <Desktop {...this.props}
+                accesStates={this.state}
+                pageClass={
+                    pageClass + ' desktop '  +
+                    this.state.accessibilityClass + ' ' +
+                    this.state.zoomClass +  ' ' +
+                    this.state.linksClass +  ' ' +
+                    this.state.fontsClass 
             }  accessibility={this.changeAccessibilityClass} />
+            
+            <ToastContainer
+
+                position='top-left'
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop
+                closeOnClick
+                rtl={true}
+                pauseOnVisibilityChange
+                draggable
+                pauseOnHover={true}
+                theme="colored"
+                />
+            </>
         }
     }
 }

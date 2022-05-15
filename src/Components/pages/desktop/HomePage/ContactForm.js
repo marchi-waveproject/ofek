@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
-import { Container, Col, Row, Form, Button, Spinner } from "react-bootstrap"; //npm install react-bootstrap@next bootstrap@5.1.0
+import { Col, Row, Form, Button, Spinner } from "react-bootstrap"; //npm install react-bootstrap@next bootstrap@5.1.0
 import { map } from "lodash" //https://lodash.com/docs/4.17.15#map
 import validator from "validator"; //npm install validator
 import { toast } from 'react-toastify' //npm i react-toastify
-//import getDataFromApi from './../../../api/getDataFromApi'
+import getDataFromApi from './../../../../Components/utils/getDataFromApi'
 
+import {getAllUrlParams} from "./../../../../Components/UrlParameters";
 
 export default function ContactForm(props) {
 
@@ -81,15 +82,17 @@ export default function ContactForm(props) {
             
             const newURL = window.location.protocol + "//" + window.location.host + window.location.search
             
+            const search = getAllUrlParams(window.location.search);
+            
 
             formData.url = newURL;
-            //formData.campaign_id = search?.campaign_id ? search.campaign_id : '';
+            formData.campaign_id = search.campaign_id ? search.campaign_id : '';
             formData.bannerid = infoSite.media;
 
             
             console.log(formData);
 
-            //sendtoApi('sendMail', 'welcome', formData, setLoading, setSentForm)
+            sendtoApi('sendMail', 'welcome', formData, setLoading, setSentForm)
 
         }
 
@@ -106,7 +109,7 @@ export default function ContactForm(props) {
             
             <Row >
 
-                <Col md='6'>
+                <Col md='6' className='cols'>
 
                       <Form.Control
 
@@ -128,7 +131,7 @@ export default function ContactForm(props) {
 
                 </Col>
 
-                <Col md='6'>
+                <Col md='6' className='cols'>
 
                     
 
@@ -157,7 +160,7 @@ export default function ContactForm(props) {
 
             <Row >
 
-              <Col md='6'>
+              <Col md='6' className='cols'>
 
                 <Form.Control
 
@@ -179,21 +182,21 @@ export default function ContactForm(props) {
 
                 </Col>
 
-                {!isMobile && <Col md='6'>
-                <div className="d-grid gap-2 btnCont">
+                <Col md='6' className='cols'>
+                  <div className="d-grid gap-2 btnCont">
 
-                <Button 
-                    className='bounce1'
-                    variant={areErrors ? 'danger' : 'primary'}
-                    size="lg"
-                    onClick={ onSubmit }
-                    disabled={loading}
-                    >
-                    {loading ? <Spinner size="sm" animation="border" variant="light" /> : <span>שלחו</span> }
-                </Button>
+                  <Button 
+                      className='bounce1'
+                      variant={areErrors ? 'danger' : 'primary'}
+                      size="lg"
+                      onClick={ onSubmit }
+                      disabled={loading}
+                      >
+                      {loading ? <Spinner size="sm" animation="border" variant="light" /> : <span>שלחו</span> }
+                  </Button>
 
-                </div>
-                </Col> }
+                  </div>
+                </Col>
 
               </Row>
 
@@ -243,7 +246,7 @@ function defaultValueForm(formFields) {
 
 }
 
-/* function sendtoApi(url, controller, objectToSend, setLoading, setSentForm) {
+function sendtoApi(url, controller, objectToSend, setLoading, setSentForm) {
 
   setLoading(true)
   const getData = getDataFromApi(url, objectToSend, controller, 'all')
@@ -273,4 +276,4 @@ function defaultValueForm(formFields) {
   getData.finally(() => {
     setLoading(false)
   })
-} */
+} 

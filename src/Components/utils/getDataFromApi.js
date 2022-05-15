@@ -1,4 +1,4 @@
-import { RestUrls } from "./config";
+import { RestUrls } from "./../Urls";
 import { toast } from 'react-toastify' //npm i react-toastify
 
 
@@ -9,7 +9,7 @@ export default async function getDataFromApi (url,objectToSend, controller, auth
     const API =  RestUrls.baseApiUrl + controller + '/' + url;
 
     let userPass = {
-        siteCode :  RestUrls.Code
+        siteCode :  RestUrls.Code2
     };
 
     let items = {...userPass, ...objectToSend}

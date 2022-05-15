@@ -82,11 +82,11 @@ export default class Footer extends Component {
                         </Container>
                     </section>
 
-                    <div className="credit">
+                    {/* <div className="credit">
                         <a href="http://ak-adv.co.il" target="_blank"  rel="noopener noreferrer">
                             <img src="https://ak-digital.net/ak-mobile/mail_img/ak-b-hd.gif" alt="Avioz-Krispin" />
                         </a>
-                    </div>
+                    </div> */}
 
                 </footer>
             </div>

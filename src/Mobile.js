@@ -23,7 +23,7 @@ export default class Mobile extends Component {
                     <ContentWrapper page={this.props.page} info={this.props.info} friendProj={this.props.friendProj} />
                 </div>
 
-                <Footer {...this.props}/>
+                {this.props.page === 'welcome/beitShemesh' && <Footer {...this.props}/> }
             </div>
         )
     }

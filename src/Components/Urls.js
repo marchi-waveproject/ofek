@@ -15,10 +15,12 @@ let code = 'as-!wd+=kjh@$%+asd';
 export const RestUrls = {
     Code: '?code=' + md5(code),
     Code2: md5(code),
+    baseApiUrl : 'https://lamishtaken.ofekshely.co.il/api/',
     /* Code2: md5(code) + '1', */
     SiteData: `https://lamishtaken.ofekshely.co.il/api/welcome/SiteDataItems?code=` + md5(code),
     Pages: 'https://lamishtaken.ofekshely.co.il/api/',
-    Leads: 'https://lamishtaken.ofekshely.co.il/api/welcome/leadform'
+    Leads: 'https://lamishtaken.ofekshely.co.il/api/welcome/leadform',
+    LeadsNew: 'https://lamishtaken.ofekshely.co.il/api/welcome/leadform',
 }   
 
 export const ConstantsNames = {
