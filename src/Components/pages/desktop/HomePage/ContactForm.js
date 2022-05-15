@@ -98,7 +98,7 @@ export default function ContactForm(props) {
 
     }
 
-    const isMobile = infoSite.media === 'desktop' ? false : true;
+    //const isMobile = infoSite.media === 'desktop' ? false : true;
 
   return (
     <div className='contactForm'>

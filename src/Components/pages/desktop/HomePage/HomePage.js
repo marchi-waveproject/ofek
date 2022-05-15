@@ -7,8 +7,6 @@ import ShowProjects from './ShowProjects';
 import AboutLinks from './AboutLinks';
 import ContactForm from './ContactForm';
 import MmenuTop from './MmenuTop';
-import { animateScroll as scroll, } from 'react-scroll' /* https://www.npmjs.com/package/react-scroll */
-
 
 export default function HomePage(props) {
 
