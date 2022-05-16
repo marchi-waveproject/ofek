@@ -94,8 +94,10 @@ export default function MmenuTop(props) {
 
             <img className='logoMenu' src={logoMenu} alt='logoMenu' />
 
-            <div className='lItems'>
-                <p><small>*</small>2898</p>
+            <div className='lItems' >
+                <a href='tel:*2898' rel="noopener noreferrer">
+                  <p><small>*</small>2898</p>
+                </a>
             </div>
 
         </div>
