@@ -147,6 +147,38 @@ export default class BlueWave extends Component {
                     <Search currentState={this.state} Migrashim={this.state.migrashim} />
                 </section>
 
+                {/* <section className="DeppartmentFile">
+                       
+                    <div className="buidingsFiles">
+                        <Container maxWidth="lg" >
+                            <h3>ביניין: {this.state.buildingData.title} - <small> ({this.state.buildingData.migrash_name})</small></h3>
+                            
+                            <div className ="form-group changeBuildSelect" >
+                                <select className ="form-control"
+                                    name ="building" value ={ this.state.buildingTitle }
+                                    onChange ={ this.Changebuilding } >
+                                    <option value='1' >בחר ביניין אחר</option> 
+
+                                    {   buildings.map( building => 
+                                        < option value ={ building.id } value2='sebas' key ={ building.id }> 
+                                        { building.migrash_name + ' - ביניין: ' + building.title }
+                                        </ option >
+                                    )}
+                                </select >
+                            </div >
+
+                            <div className="tableFiles">
+                                <div className="RowtableFiles">
+                                    <div className="col title">תוכנית קומה</div>
+                                    <div className="col title">תוכנית דירה</div>
+                                </div>
+                                <ShowBuildingFiles tochniotBinian={tochniotBinian} />
+                            </div>
+
+                        </Container>
+                    </div>
+                </section> */}
+
                 <section className="DoccumentsFiles">
                         <Container maxWidth="lg" >
                             <h2>{page.h2_files}</h2>
@@ -160,7 +192,7 @@ export default class BlueWave extends Component {
                             </div>
                         </Container>
 
-                    </section>
+                </section>
                 
                 
                 {false && <Fragment>
@@ -179,50 +211,6 @@ export default class BlueWave extends Component {
                                 )}
                             </div>
                         </div>
-                        <div className="buidingsFiles">
-                            <Container maxWidth="lg" >
-                                {/* ID {this.state.building} */}
-                                <h3>ביניין: {this.state.buildingData.title} - <small> ({this.state.buildingData.migrash_name})</small></h3>
-                                
-                                <div className ="form-group changeBuildSelect" >
-                                    <select className ="form-control"
-                                        name ="building" value ={ this.state.buildingTitle }
-                                        onChange ={ this.Changebuilding } >
-                                        <option value='1' >בחר ביניין אחר</option> 
-
-                                        {   buildings.map( building => 
-                                            < option value ={ building.id } value2='sebas' key ={ building.id }> 
-                                            { building.migrash_name + ' - ביניין: ' + building.title }
-                                            </ option >
-                                        )}
-                                    </select >
-                                </div >
-
-                                <div className="tableFiles">
-                                    <div className="RowtableFiles">
-                                        <div className="col title">תוכנית קומה</div>
-                                        <div className="col title">תוכנית דירה</div>
-                                    </div>
-                                    <ShowBuildingFiles tochniotBinian={tochniotBinian} />
-                                </div>
-
-                            </Container>
-                        </div>
-                    </section>
-
-                    <section className="DoccumentsFiles">
-                        <Container maxWidth="lg" >
-                            <h2>{page.h2_files}</h2>
-                            <div className="allFiles">
-                                { doccumentsFiles.map( files =>
-                                    <a key={files.id} href={ ConstantsNames.files + files.file} rel="noopener noreferrer" target='_blank' >
-                                        <img src={whitePdf} alt='PDF LOGO' />
-                                        {files.title}
-                                    </a>
-                                )}
-                            </div>
-                        </Container>
-
                     </section>
 
                 </Fragment> }
