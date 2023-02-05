@@ -146,6 +146,21 @@ export default class BlueWave extends Component {
                     <SearchBar  showMigrasQuads={false} currentState={this.state} Migrashim={this.props.pageData.fullMigrashData} {...this.props} submit={ this.submitData } />
                     <Search currentState={this.state} Migrashim={this.state.migrashim} />
                 </section>
+
+                <section className="DoccumentsFiles">
+                        <Container maxWidth="lg" >
+                            <h2>{page.h2_files}</h2>
+                            <div className="allFiles">
+                                { doccumentsFiles.map( files =>
+                                    <a key={files.id} href={ ConstantsNames.files + files.file} rel="noopener noreferrer" target='_blank' >
+                                        <img src={whitePdf} alt='PDF LOGO' />
+                                        {files.title}
+                                    </a>
+                                )}
+                            </div>
+                        </Container>
+
+                    </section>
                 
                 
                 {false && <Fragment>
