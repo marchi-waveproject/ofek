@@ -18,6 +18,7 @@ import Calc  from './pages/desktop/Calc/Calc'; */
 import Accessibility  from './pages/mobile/Accessibility/Accessibility';
 import HomePage from './pages/desktop/HomePage/HomePage';
 import Page404  from './pages/Page404';
+import BlueWave from './pages/mobile/BlueWave/BlueWave';
 
 
 export default class ContentWrapper extends Component {
@@ -80,6 +81,15 @@ export default class ContentWrapper extends Component {
                             <BeitShemesh pageData={items} infoSite={this.props.info} />
                         </React.Fragment>
                     )
+
+                case "welcome/blueWave":
+                return (
+                    <React.Fragment>
+                        <Seo infoSite={this.props.info} pageData={items} />
+                        <Nav info={this.props.info} className="element" />
+                        <BlueWave pageData={items} infoSite={this.props.info} />
+                    </React.Fragment>
+                )   
 
 
                 case "welcome/homepage":
