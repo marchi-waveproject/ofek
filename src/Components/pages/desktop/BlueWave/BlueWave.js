@@ -151,10 +151,6 @@ export default class BlueWave extends Component {
                 {false && <Fragment>
                     
 
-
-
-                   
-
                     <section className="DeppartmentFile">
                         <div className="overFlow">
                             <div className="chooseBuilding" style={{backgroundImage: "url(" + Background + ")" }}>
@@ -198,8 +194,6 @@ export default class BlueWave extends Component {
                             </Container>
                         </div>
                     </section>
-
-
 
                     <section className="DoccumentsFiles">
                         <Container maxWidth="lg" >

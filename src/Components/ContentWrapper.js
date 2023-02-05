@@ -79,7 +79,7 @@ export default class ContentWrapper extends Component {
                     return (
                         <React.Fragment>
                             <Seo infoSite={this.props.info} pageData={items} />
-                            <Nav info={this.props.info} className="element" />
+                            <Nav info={this.props.info} className="element" blueWave = {true} />
                             <BlueWave pageData={items} infoSite={this.props.info} />
                         </React.Fragment>
                     )                    

@@ -130,7 +130,8 @@ export default function Nav(props) {
 
           <div className='main-menu col'>
             <NavLink activeClassName='is-active' to="/">
-              <img className='mainLogo' src={logo} alt={props.info.SiteDataitems.settings.sitename} />
+              { props.blueWave ? <div style={{display:'inline-block'}}>LOGO SVG</div> : 
+                  <img className='mainLogo' src={logo} alt={props.info.SiteDataitems.settings.sitename} /> }
             </NavLink>
           </div>
         </div>

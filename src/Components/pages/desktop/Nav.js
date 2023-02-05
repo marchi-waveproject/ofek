@@ -31,6 +31,7 @@ export default class Nav extends Component {
     } */
     
     //console.log(this.props.info.SiteDataitems.pages);
+    console.log(this.props);
 
     return <div className="header-wrapper">
       <div className='site-header'>
@@ -38,7 +39,8 @@ export default class Nav extends Component {
         <div className="topHeader">
           <div className='main-menu colMenu'>
             <NavLink activeClassName='is-active' to="/">
-              <img className='mainLogo' src={logo} alt={this.props.info.SiteDataitems.settings.sitename} />
+              {this.props.blueWave ? <div style={{display:'inline-block'}}>LOGO SVG</div> : 
+                <img className='mainLogo' src={logo} alt={this.props.info.SiteDataitems.settings.sitename} />}
             </NavLink>
 
             <nav role="menu" aria-label="תפריט ראשי" className="colMenu">
