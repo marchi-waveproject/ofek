@@ -31,7 +31,7 @@ export default class Nav extends Component {
     } */
     
     //console.log(this.props.info.SiteDataitems.pages);
-    console.log(this.props);
+    //console.log(this.props);
 
     return <div className="header-wrapper">
       <div className='site-header'>

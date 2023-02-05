@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import NumberFormat from 'react-number-format';
 //https://github.com/s-yadav/react-number-format
@@ -43,7 +43,11 @@ export default class TrTable extends Component {
                         <td>{this.props.department.storeNumber}</td>
                         <td>{this.props.department.parkingNumber}</td>
                         <td>{this.props.department.notes}</td>
-                        <td ><NumberFormat value={this.props.department.price} displayType={'text'} thousandSeparator={true} /* prefix={} */ /> ש״ח</td>
+                        <td >
+                            { parseFloat(this.props.department.price) > 0 ? <Fragment>
+                                <NumberFormat value={this.props.department.price} displayType={'text'} thousandSeparator={true} /* prefix={} */ /> ש״ח
+                            </Fragment> : <span>-</span> }
+                        </td>
                         <td className='toPDFFile'>
                             {this.props.department.pdfFile ? 
                             <a href={ConstantsNames.files + this.props.department.pdfFile} rel='noopener noreferrer' target='_blank'>
