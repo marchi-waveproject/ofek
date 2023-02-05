@@ -8,6 +8,7 @@ import logoOfek from './../../../../img/icons/logoOfek.svg'
 //import logoIgal from './../../../../img/icons/logoIgal.svg'
 
 import Owl from "./.././../../Owl";
+import APPIpic from '../../../APPIpic';
 
 export default class Section1 extends Component {
     render() {
@@ -35,7 +36,7 @@ export default class Section1 extends Component {
                         {
                             this.props.gallery.map(item => (
                             <div className="item" key={item.data.id}>
-                                {/* <APPIpic  pic={item} mobile={this.props.mobile} /> */}
+                                <APPIpic  pic={item} mobile={this.props.mobile} />
                                 <TextToHtml NameClass="hover" text={item.data.text} />
                             </div>    
                             ))
