@@ -12,8 +12,8 @@ export default function HomePage(props) {
 
     const {infoSite,pageData} = props
 
-    console.log(infoSite);
-    console.log('pageData', pageData);
+    //console.log(infoSite);
+    //console.log('pageData', pageData);
 
     const is_Mobile = infoSite.media === 'mobile' ? true : false;
     //http://localhost:3000/%D7%A0%D7%95%D7%95%D7%94_%D7%A9%D7%9E%D7%99%D7%A8

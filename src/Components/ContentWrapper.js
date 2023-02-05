@@ -10,6 +10,7 @@ import Page404  from './pages/Page404';
 
 import Accessibility  from './pages/desktop/Accessibility/Accessibility';
 import HomePage from './pages/desktop/HomePage/HomePage';
+import BlueWave from './pages/desktop/BlueWave/BlueWave';
 
 
 export default class ContentWrapper extends Component {
@@ -72,6 +73,16 @@ export default class ContentWrapper extends Component {
                             <BeitShemesh pageData={items} infoSite={this.props.info} />
                         </React.Fragment>
                     )
+
+
+                case "welcome/blueWave":
+                    return (
+                        <React.Fragment>
+                            <Seo infoSite={this.props.info} pageData={items} />
+                            <Nav info={this.props.info} className="element" />
+                            <BlueWave pageData={items} infoSite={this.props.info} />
+                        </React.Fragment>
+                    )                    
 
                 
                 case "welcome/accessibility":

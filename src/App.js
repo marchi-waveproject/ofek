@@ -7,6 +7,7 @@ import { isMobile } from "react-device-detect"; //npm install react-device-detec
 import { RestUrls } from "./Components/Urls"
 import { getId } from "./Components/getId"
 import Loading from './Components/utils/Loading';
+import { toast } from 'react-toastify';
 
 //npm install @mui/material @emotion/react @emotion/styled
 //npm install @mui/material @mui/styled-engine-sc styled-components
@@ -39,17 +40,37 @@ export default class App extends Component {
   async componentDidMount() {
 
     const API =  RestUrls.SiteData;
-    
-    
+        
 
-    const res = await fetch(API)
-    const data = await res.json();
+    console.log(API);
+
+    try {
+
+      //const res = await fetch(API)
+
+      const res = await fetch(API, {
+        method: "GET",
+        headers: {
+        "Content-Type" : 'application/json',
+        "Accept" : 'application/json'
+        },
+        //body: JSON.stringify(items)
+    });
+
+      const data = await res.json();
 
 
-    this.setState(
-        {SiteDataitems: data,
-          isReady: true}
-    )
+      this.setState(
+          {SiteDataitems: data,
+            isReady: true}
+      )
+
+    } catch (e) {
+
+      toast.error('שגיאה בשרת');      
+      console.log('error', e);
+      
+  }
   
 }
   
@@ -83,6 +104,7 @@ export default class App extends Component {
               )
               )}
               
+              
               {/* {ProjetsLow.map(projectsData => (
                   
                 <Route 
@@ -94,6 +116,7 @@ export default class App extends Component {
               {/* <Route path={ConstantsNames.centerPageName + ':id'} component={() => <SiteConnector  page="welcome/center" info={this.state} />} /> */}
 
               <Route component={() => <SiteConnector  page="welcome/error404Page" info={this.state} />} />
+
             </Switch>
             
           </Router>

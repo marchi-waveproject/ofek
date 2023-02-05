@@ -10,6 +10,7 @@ import './css/animate.min.css'; /* https://daneden.github.io/animate.css/ */
 import './css/site.scss';
 import './css/site_pages.scss';
 import './css/accessibility.css';
+import FooterBlueWave from './Components/pages/desktop/FooterBlueWave';
 
 export default class Desktop extends Component {
     render() {
@@ -25,6 +26,8 @@ export default class Desktop extends Component {
                 </div>
 
                 {this.props.page === 'welcome/beitShemesh' && <Footer {...this.props}/> }
+
+                {this.props.page === 'welcome/blueWave' && <FooterBlueWave {...this.props}/> }
 
             </div>
         )

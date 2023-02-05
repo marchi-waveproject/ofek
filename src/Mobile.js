@@ -8,6 +8,7 @@ import Accessibility from './Components/Accessibility';
 
 import './css/m_site.scss';
 import './css/m_site_pages.scss';
+import FooterBlueWave from './Components/pages/desktop/FooterBlueWave.js';
 
 export default class Mobile extends Component {
     render() {
@@ -24,6 +25,9 @@ export default class Mobile extends Component {
                 </div>
 
                 {this.props.page === 'welcome/beitShemesh' && <Footer {...this.props}/> }
+
+                {this.props.page === 'welcome/blueWave' && <FooterBlueWave {...this.props}/> }
+                
             </div>
         )
     }
