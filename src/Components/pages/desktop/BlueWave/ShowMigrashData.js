@@ -14,13 +14,15 @@ export default class ShowMigrashData extends Component {
 
         let departments = building.departments;
 
+        //console.log(info.states.prices);
+
         if(building) {
                 if(departments) {
 
                         return departments.map(department => (
                         <TrTable info={info}
                                 key={department.id}
-                                price={parseInt(department.price) <= parseInt(info.states.prices) || !info.states.prices ? true : false}
+                                price={ ( parseInt(department.price) <= parseInt(info.states.prices) && parseInt(department.price) > 0 ) || !info.states.prices ? true : false}
                                 rooms={department.rooms === info.states.rooms || !info.states.rooms ? true : false}
                                 noMishtaken={(info.states.noMishtaken && department.is_not_mishtake === '1') || !info.states.noMishtaken ? true : false}
                                 available={(info.states.available && department.is_sold !== '1') || !info.states.available ? true : false}
