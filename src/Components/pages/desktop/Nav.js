@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'; 
 
 import logo from './../../../img/default/logoMenu.svg';
+import logoMenuWaveBlue from './../../../img/default/logoMenuWaveBlue.svg'
 
 //import b_facebookIcon from './../../../img/icons/black/facebook.svg';
 //import b_instagram from './../../../img/icons/black/instagram.svg';
@@ -39,7 +40,7 @@ export default class Nav extends Component {
         <div className="topHeader">
           <div className='main-menu colMenu'>
             <NavLink activeClassName='is-active' to="/">
-              {this.props.blueWave ? <div style={{display:'inline-block'}}>LOGO SVG</div> : 
+              {this.props.blueWave ? <img className='mainLogo' style={{width: '140px'}} src={logoMenuWaveBlue} alt={this.props.info.SiteDataitems.settings.sitename} /> : 
                 <img className='mainLogo' src={logo} alt={this.props.info.SiteDataitems.settings.sitename} />}
             </NavLink>
 

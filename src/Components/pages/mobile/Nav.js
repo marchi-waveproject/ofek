@@ -12,7 +12,7 @@ import { Link } from 'react-scroll'  /* https://www.npmjs.com/package/react-scro
 
 import { NavLink } from 'react-router-dom'; 
 
-
+import logoMenuWaveBlue from './../../../img/default/logoMenuWaveBlue.svg'
 import logo from './../../../img/default/logoMenu.svg';
 
 /* import b_facebookIcon from './../../../img/icons/black/facebook.svg';
@@ -130,7 +130,7 @@ export default function Nav(props) {
 
           <div className='main-menu col'>
             <NavLink activeClassName='is-active' to="/">
-              { props.blueWave ? <div style={{display:'inline-block'}}>LOGO SVG</div> : 
+              { props.blueWave ? <img className='mainLogo' style={{width: '100px'}} src={logoMenuWaveBlue} alt={props.info.SiteDataitems.settings.sitename} /> : 
                   <img className='mainLogo' src={logo} alt={props.info.SiteDataitems.settings.sitename} /> }
             </NavLink>
           </div>
