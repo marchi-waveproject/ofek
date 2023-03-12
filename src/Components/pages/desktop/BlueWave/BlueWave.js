@@ -147,7 +147,7 @@ export default class BlueWave extends Component {
                     <Search currentState={this.state} Migrashim={this.state.migrashim} />
                 </section>
 
-                {/* <section className="DeppartmentFile">
+                <section className="DeppartmentFile">
                        
                     <div className="buidingsFiles">
                         <Container maxWidth="lg" >
@@ -177,7 +177,7 @@ export default class BlueWave extends Component {
 
                         </Container>
                     </div>
-                </section> */}
+                </section>
 
                 <section className="DoccumentsFiles">
                         <Container maxWidth="lg" >
