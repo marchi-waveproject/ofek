@@ -14,8 +14,22 @@ export default class TrTable extends Component {
 
         //console.log('table');
 
-        
-        if(this.props.price && this.props.rooms && this.props.noMishtaken && this.props.available && this.props.department.is_sold === '1' ) {
+        console.log(this.props);
+
+        if(this.props.department.is_not_mishtake === '1' && this.props.department.is_sold !== '1' ) {
+
+            return (
+                
+                <tr className="trHofshi">
+                    <td>{this.props.info.data.migrash.title}</td>
+                    <td>{this.props.building.title}</td>
+                    <td>{this.props.department.title}</td>
+                    <td colSpan='10'><strong>- שוק חופשי -</strong></td>
+                </tr>
+            );
+
+        } else if(this.props.department.is_sold === '1' ) {
+
             return (
                 
                 <tr className="trSold">
@@ -24,7 +38,8 @@ export default class TrTable extends Component {
                     <td>{this.props.department.title}</td>
                     <td colSpan='10'><strong>- נמכר -</strong></td>
                 </tr>
-            );
+            )
+
         } else if(this.props.price && this.props.rooms && this.props.noMishtaken && this.props.available) {
             return (
                 
