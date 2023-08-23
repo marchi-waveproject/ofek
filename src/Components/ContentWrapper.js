@@ -11,6 +11,7 @@ import Page404  from './pages/Page404';
 import Accessibility  from './pages/desktop/Accessibility/Accessibility';
 import HomePage from './pages/desktop/HomePage/HomePage';
 import BlueWave from './pages/desktop/BlueWave/BlueWave';
+import ShirTower from './pages/desktop/shirTower/ShirTower';
 
 
 export default class ContentWrapper extends Component {
@@ -82,7 +83,16 @@ export default class ContentWrapper extends Component {
                             <Nav info={this.props.info} className="element" blueWave = {true} />
                             <BlueWave pageData={items} infoSite={this.props.info} />
                         </React.Fragment>
-                    )                    
+                    )  
+                    
+                case "welcome/shirTower":
+                    return (
+                        <React.Fragment>
+                            <Seo infoSite={this.props.info} pageData={items} />
+                            <Nav info={this.props.info} className="element" blueWave = {true} />
+                            <ShirTower pageData={items} infoSite={this.props.info} />
+                        </React.Fragment>
+                    )   
 
                 
                 case "welcome/accessibility":

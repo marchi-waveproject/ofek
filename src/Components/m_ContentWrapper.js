@@ -91,6 +91,16 @@ export default class ContentWrapper extends Component {
                     </React.Fragment>
                 )   
 
+                case "welcome/shirTower":
+                    return (
+                        <React.Fragment>
+                            <Seo infoSite={this.props.info} pageData={items} />
+                            <Nav info={this.props.info} className="element" blueWave = {true} />
+                            <h1>m_ContentWrapper - MOBILE</h1>
+                            {/* <ShirTower pageData={items} infoSite={this.props.info} /> */}
+                        </React.Fragment>
+                    )
+
 
                 case "welcome/homepage":
                     return (
